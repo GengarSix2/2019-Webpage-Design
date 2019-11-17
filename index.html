@@ -1,120 +1,120 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 <head>
-<!-- META -->
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- META -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<!-- TITLE -->
-<title>EClass Assistant</title>
+	<!-- TITLE -->
+	<title>EClass Assistant</title>
 
-<!-- Main StyleSheet -->
-<link href="style.css" rel="stylesheet" type="text/css" />
-<link href="style-responsive.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<!-- Main StyleSheet -->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="style-responsive.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
 
-<!--<link rel="stylesheet" href="css/bootstrap1.min.css">-->
-<link rel="stylesheet" href="css/libs/animate.css">
-
-
-<!-- bxSlider CSS file -->
-<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<!--<link rel="stylesheet" href="css/bootstrap1.min.css">-->
+	<link rel="stylesheet" href="css/libs/animate.css">
 
 
-<!-- LayerSlider stylesheet -->
-<link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
-<!-- External libraries: jQuery & GreenSock -->
-<script src="layerslider/js/jquery.js" type="text/javascript"></script>
-<!--<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>-->
-<script src="layerslider/js/greensock.js" type="text/javascript"></script>
-<!-- LayerSlider script files -->
-<script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
-<script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="https://cdn.bootcss.com/jquery-smoove/0.2.11/jquery.smoove.js"></script>
-<!-- bxSlider Javascript file -->
-<!--    <script src="js/jquery.js"></script>-->
-<script src="js/jquery.bxslider.js"></script>
-<script>
-$(document).ready(function(){
-$('.bxslider').bxSlider({
-
-						pager: false,
-						controls: true,
-						auto: true
+	<!-- bxSlider CSS file -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 
 
-						});
-});
-</script>
+	<!-- LayerSlider stylesheet -->
+	<link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="layerslider/js/jquery.js" type="text/javascript"></script>
+	<!--<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>-->
+	<script src="layerslider/js/greensock.js" type="text/javascript"></script>
+	<!-- LayerSlider script files -->
+	<script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+	<script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="https://cdn.bootcss.com/jquery-smoove/0.2.11/jquery.smoove.js"></script>
+	<!-- bxSlider Javascript file -->
+	<!--    <script src="js/jquery.js"></script>-->
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.bxslider').bxSlider({
+
+				pager: false,
+				controls: true,
+				auto: true
+
+
+			});
+		});
+	</script>
 
 
 
-<link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css" media="screen" />
-<script src="lightbox/jquery.fancybox.js"></script>
-<script type="text/javascript">
+	<link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css" media="screen" />
+	<script src="lightbox/jquery.fancybox.js"></script>
+	<script type="text/javascript">
 		$(document).ready(function() {
 
 			$('.fancybox').fancybox();
 
 		});
-</script>
+	</script>
 
 
-<!-- GOTO TOP JQUERY -->
-<script type="text/javascript">
-$(function() {
-	$(window).scroll(function() {
-		if($(this).scrollTop() != 0) {
-			$('#gotop').fadeIn();
-		} else {
-			$('#gotop').fadeOut();
-		}
-	});
+	<!-- GOTO TOP JQUERY -->
+	<script type="text/javascript">
+		$(function() {
+			$(window).scroll(function() {
+				if($(this).scrollTop() != 0) {
+					$('#gotop').fadeIn();
+				} else {
+					$('#gotop').fadeOut();
+				}
+			});
 
-	$('#gotop').click(function() {
-		$('body,html').animate({scrollTop:0},800);
-	});
-});
-</script>
-
-
-
-<!-- HEADER JQUERY -->
-<script type="text/javascript">
-$(function() {
-	$(window).scroll(function() {
-		if($(this).scrollTop() >= 200) {
-			$('.header').addClass("header_fix");
-		} else {
-		   $('.header').removeClass("header_fix");
-		}
-	});
-});
-</script>
-
-
-<script type="text/javascript">
-
-if($(window).width() <= 900){
-$(document).ready(function() {
-
-
-
-			$('.mobile .title').click(function() {
-
-										$(this).next("ul").slideToggle();
-										$(this).toggleClass("minus");
-
-										});
-
-
-
+			$('#gotop').click(function() {
+				$('body,html').animate({scrollTop:0},800);
+			});
 		});
+	</script>
 
-}
-</script>
+
+
+	<!-- HEADER JQUERY -->
+	<script type="text/javascript">
+		$(function() {
+			$(window).scroll(function() {
+				if($(this).scrollTop() >= 200) {
+					$('.header').addClass("header_fix");
+				} else {
+					$('.header').removeClass("header_fix");
+				}
+			});
+		});
+	</script>
+
+
+	<script type="text/javascript">
+
+		if($(window).width() <= 900){
+			$(document).ready(function() {
+
+
+
+				$('.mobile .title').click(function() {
+
+					$(this).next("ul").slideToggle();
+					$(this).toggleClass("minus");
+
+				});
+
+
+
+			});
+
+		}
+	</script>
 
 </head>
 
@@ -123,342 +123,328 @@ $(document).ready(function() {
 
 
 <div class="header">
-<div class="container">
+	<div class="container">
 
-			<a href="#" class="logo"><img src="images/Logo_Blue.png" alt=""  style="height: 50px; margin-top: -15px;"/></a>
-			<div class="nav mobile">
+		<a href="#" class="logo"><img src="images/Logo_Blue.png" alt=""  style="height: 50px; margin-top: -15px;"/></a>
+		<div class="nav mobile">
 			<div class="title">EClass Assistant 官网 <span class="fa "></span></div>
 			<ul>
-			<li><a href="#full-slider-wrapper">首页</a></li>
-			<li><a href="#features">特色介绍</a></li>
-			<li><a href="#function">功能简介</a></li>
-			<li><a href="#contact_part">关于我们</a></li>
-			<li><a href="#subscribe_part">申请使用</a></li>
+				<li><a href="#full-slider-wrapper">首页</a></li>
+				<li><a href="#features">功能定位</a></li>
+				<li><a href="#function">特色介绍</a></li>
+				<li><a href="#contact_part">关于我们</a></li>
+				<li><a href="#">申请使用</a></li>
 			</ul>
-			</div>
+		</div>
 
-</div>
+	</div>
 </div>
 
 
 <div class="wrapper">
-<div class="slider_main">
-<div id="full-slider-wrapper">
-<div id="layerslider" style="width:100%;height:473px;">
+	<div class="slider_main">
+		<div id="full-slider-wrapper">
+			<div id="layerslider" style="width:100%;height:473px;">
 
 
-						<div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
-						<img src="images/slider/Background_Pic1.png" class="ls-bg" alt="Slide background"/>
+				<div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+					<img src="images/slider/Background_Pic1.png" class="ls-bg" alt="Slide background"/>
 
 
-						<div class="ls-l videopreview" style="top:87px;left:0px;white-space: nowrap;" data-ls="offsetxin:-200;durationin:2000;offsetxout:-200;">
+					<div class="ls-l videopreview" style="top:87px;left:0px;white-space: nowrap;" data-ls="offsetxin:-200;durationin:2000;offsetxout:-200;">
 						<!--<iframe src="http://player.vimeo.com/video/34134308?portrait=0&amp;color=ff9933&autoplay=1" width="443" height="290" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
 						<img src="images/MainForm_Shot.png" alt="" style="width: 444px;"/>
-						</div>
+					</div>
 
 
-						<div class="ls-l" style="top:100px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+					<div class="ls-l" style="top:100px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
 						<h2 class="l1">EClass Assistant 5.0</h2>
-						</div>
+					</div>
 
-						<div class="ls-l" style="top:160px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+					<div class="ls-l" style="top:160px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
 						<h2 class="l2">班级管理语音显示助手 / 多媒体教学辅助 / 公用电脑维护</h2>
 						<h2 class="l2">无需升级硬件设备，在软件层面为多媒体教学助力</h2>
 						<h2 style="margin-top: 30px;font-weight:lighter;color: #C9E1F1;">适用系统：XP / Vista / Win 7 / Win 8 / Win 10</h2>
-						</div>
+					</div>
 
 
 
-						<div class="ls-l" style="top:320px;left:598px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-							<a href="#" class="button2">立即下载</a>
-						</div>
+					<div class="ls-l" style="top:320px;left:598px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<a href="#" class="button2">立即下载</a>
+					</div>
 
 
-						<div class="ls-l" style="top:320px;left:810px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-							<a href="#" class="button1">使用教程</a>
-						</div>
+					<div class="ls-l" style="top:320px;left:810px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<a href="#" class="button1">使用教程</a>
+					</div>
 
 
-						</div><!--FIRST SLIDE-->
+				</div><!--FIRST SLIDE-->
 
 
-	                    <!--SECOND SLIDE-->
-						<div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
-						<img src="images/slider/Background_Pic1.png" class="ls-bg" alt="Slide background"/>
+				<!--SECOND SLIDE-->
+				<div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+					<img src="images/slider/Background_Pic1.png" class="ls-bg" alt="Slide background"/>
 
 
-						<div class="ls-l videopreview" style="top:87px;left:0px;white-space: nowrap;" data-ls="offsetxin:-200;durationin:2000;offsetxout:-200;">
+					<div class="ls-l videopreview" style="top:87px;left:0px;white-space: nowrap;" data-ls="offsetxin:-200;durationin:2000;offsetxout:-200;">
 						<!--<iframe src="http://player.vimeo.com/video/34134308?portrait=0&amp;color=ff9933&autoplay=1" width="443" height="290" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
 						<img src="images/MainForm_Shot.png" alt="" style="width: 444px;"/>
-						</div>
+					</div>
 
 
-						<div class="ls-l" style="top:100px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-						<h2 class="l1">Modern classroom</h2>
-						</div>
+					<div class="ls-l" style="top:100px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<h2 class="l1">Modern Classroom</h2>
+					</div>
 
-						<div class="ls-l" style="top:200px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-							<h2 class="l2">现代化课堂</br>高效班级管理</br>简约实用，紧跟时代步伐</br>ECA为你带来不一样的体验 </h2>
-						</div>
+					<div class="ls-l" style="top:200px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<h2 class="l2">现代化课堂</br>高效班级管理</br>简约实用，紧跟时代步伐</br>ECA为你带来不一样的体验 </h2>
+					</div>
 
+				</div><!--SECOND SLIDE-->
 
-						<!--
-						<div class="ls-l" style="top:265px;left:598px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-						<a href="#" class="button2">Learn More</a>
-						</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="service_section" id="features">
+		<div class="container">
 
-						<div class="ls-l" style="top:265px;left:810px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-						<a href="#" class="button1">Start Now</a>
-						</div>
-						-->
-
-						</div><!--SECOND SLIDE-->
-
-
-
-
-</div>
-</div>
-</div>
-
-<div class="service_section" id="features">
-<div class="container">
-
-			<h2 style="font-family: 微软雅黑;">三大角度，助力现代化课堂</h2>
+			<h2 style="font-family: 微软雅黑;letter-spacing: 2px">三大角度，助力现代化课堂</h2>
 			<h4 style="font-family: 微软雅黑;">HELP MODIFYING YOUR CLASS FROM THREE ANGLES</h4>
 
 			<div class="insider">
 
 				<div class="column">
-				<span class="fa fa-users"></span>
+					<span class="fa fa-users"></span>
 
-				<h3 style="color: #6f6f6f">班级管理</h3>
-				<p style="color: #6f6f6f;line-height:25px;">智能化语音提示，全方位提醒</br>班级事项多途径通告，不再被错过</br>
-					桌面倒计时，增加紧迫感</br>分时段氛围音乐，温馨、和谐始终相伴</p>
+					<h3 style="color: #6f6f6f">班级管理</h3>
+					<p style="color: #6f6f6f;line-height:25px;">智能化语音提示，全方位提醒</br>班级事项多途径通告，不再被错过</br>
+						桌面倒计时，增加紧迫感</br>分时段氛围音乐，温馨、和谐始终相伴</p>
 				</div>
 
 				<div class="column">
-				<span class="fa fa-graduation-cap"></span>
-				<h3 style="color: #6f6f6f">教学辅助</h3>
+					<span class="fa fa-graduation-cap"></span>
+					<h3 style="color: #6f6f6f">教学辅助</h3>
 					<p style="color: #6f6f6f;line-height:25px;">板书辅助，提高讲题效率</br>多功能教学小工具，满足教学需求</br>
 						课件自动整理，资料井井有条</br>中英文本朗读，培养文科语感</p>
 				</div>
 
 				<div class="column">
-				<span class="fa fa-laptop"></span>
-				<h3 style="color: #6f6f6f;">电脑维护</h3>
-				<p style="color: #6f6f6f;line-height:25px;">常见电脑问题，提供解决方案</br>定时关机，节电延寿</br>
-					软件权限管理，防止班级电脑滥用</br>精简化教学播放器，不让死机拖延课堂</p>
+					<span class="fa fa-laptop"></span>
+					<h3 style="color: #6f6f6f;">电脑维护</h3>
+					<p style="color: #6f6f6f;line-height:25px;">常见电脑问题，提供解决方案</br>定时关机，节电延寿</br>
+						软件权限管理，防止班级电脑滥用</br>精简化教学播放器，不让死机拖延课堂</p>
 				</div>
 
 			</div>
 
-</div>
-</div>
-
-
-<div class="Background_Part3_4">
-<div class="DifFunction_section" id="function">
-	<div>
-		<h2>全方位的班级语音广播</h2>
-		<h3>语音让通知传达更有力有效，音乐让班级氛围更加温馨</h3>
-		<h4>即时广播 or 定时提醒 / 预录广播 or 任意输入 / 可配合大字幕投影 / 支持临时修改</h4>
-	</div>
-	<div style="float: left; width: 50%;" class="img" data-move-x='-500px' data-rotate-y="90deg">
-		<img  src="images/funscr1_lessonShow.png"  alt="Part3_src1" style="margin-left: 36%; width: 60%; max-width: 100%;"/>
-	</div>
-	<div style="float: left; width: 50%;" class="img" data-move-x='500px' data-rotate-y="-90deg">
-		<img src="images/funscr1_Ann.png" alt="Part3_src2" style="margin-left: 10%; margin-top: -4%; width: 60%; max-width: 100%;"/>
-
-	</div>
-</div>
-
-
-
-<div class="DifFunction_section_Part4" id="Part4">
-	<div class="container">
-		<div>
-			<h2>自动化资料整理</h2>
-			<h3>便捷操作、自动整理，让班级教学资料井井有条</h3>
-			<h4>自动生成学课文件夹 / 右键菜单快速导入 / 桌面直接访问</h4>
-		</div>
-		<div style="float: left; width: 50%;" class="img" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
-			<img src="images/funscr2_select.png" alt="Part4_src1" style="margin-left: -10%; margin-top: -5%; width: 1220%; max-width: 120%;"/>
-		</div>
-		<div style="float: left; width: 50%;" class="img" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
-			<img src="images/funscr2_icons.png" alt="Part4_src3" style="margin-left: 14%; margin-top: -5%; width: 70%; max-width: 100%;"/>
 		</div>
 	</div>
-</div>
-</div>
+
+
+	<div class="Background_Part3_4">
+		<div class="DifFunction_section" id="function">
+			<div>
+				<h2>全方位的班级语音广播</h2>
+				<h3>语音让通知传达更有力有效，音乐让班级氛围更加温馨</h3>
+				<h4>即时广播 or 定时提醒 / 预录广播 or 任意输入 / 可配合大字幕投影 / 支持临时修改</h4>
+			</div>
+			<div style="float: left; width: 50%;" class="img" data-move-x='-500px' data-rotate-y="90deg">
+				<img  src="images/funscr1_lessonShow.png"  alt="Part3_src1" style="margin-left: 36%; width: 60%; max-width: 100%;"/>
+			</div>
+			<div style="float: left; width: 50%;" class="img" data-move-x='500px' data-rotate-y="-90deg">
+				<img src="images/funscr1_Ann.png" alt="Part3_src2" style="margin-left: 10%; margin-top: -4%; width: 60%; max-width: 100%;"/>
+
+			</div>
+		</div>
 
 
 
-
-<div class="Background_Part5_6">
-<div class="DifFunction_section_Part5" id="Part5">
-	<div>
-		<h2>实用的教学工具</h2>
-		<h3>贴近教学一线，支持扩展安装，为日常教学提供便利</h3>
-		<h4>板书辅助 / 学号抽签 / 计时器 / 科学计算器 / 名单排查 / 文本朗读</h4>
+		<div class="DifFunction_section_Part4" id="Part4">
+			<div class="container">
+				<div>
+					<h2>自动化资料整理</h2>
+					<h3>便捷操作、自动整理，让班级教学资料井井有条</h3>
+					<h4>自动生成学科文件夹 / 右键菜单快速导入 / 桌面直接访问</h4>
+				</div>
+				<div style="float: left; width: 50%;" class="img" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<img src="images/funscr2_select.png" alt="Part4_src1" style="margin-left: -10%; margin-top: -5%; width: 1220%; max-width: 120%;"/>
+				</div>
+				<div style="float: left; width: 50%;" class="img" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<img src="images/funscr2_icons.png" alt="Part4_src3" style="margin-left: 14%; margin-top: -5%; width: 70%; max-width: 100%;"/>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div style="float: left; width: 50%;" class="img" >
-		<img src="images/funscr3_board.png" alt="Part5_src1" style="margin-left: 30%;margin-top: -2%; width: 62%; max-width: 100%"/>
-	</div>
-	<div style="float: left; width: 50%" class="img" >
-		<img src="images/funscr3_calc.png" alt="Part5_src2" style="margin-left: 5%; margin-top: -3%;width: 50%"/>
 
-		<div style="border-radius:10px; box-shadow: 0 0 10px #888888;margin-left: 5%; margin-top: 2%;width: 25%; position: absolute;z-index:2; background: #2a6496;line-height: 90px; text-align: center; font-family: 微软雅黑;font-size: 20px;overflow:hidden" id="part5box3">
+
+
+	<div class="Background_Part5_6">
+		<div class="DifFunction_section_Part5" id="Part5">
+			<div>
+				<h2>实用的教学工具</h2>
+				<h3>贴近教学一线，支持扩展安装，为日常教学提供便利</h3>
+				<h4>板书辅助 / 学号抽签 / 计时器 / 科学计算器 / 名单排查 / 文本朗读</h4>
+			</div>
+
+			<div style="float: left; width: 50%;" class="img" >
+				<img src="images/funscr3_board.png" alt="Part5_src1" style="margin-left: 30%;margin-top: -2%; width: 62%; max-width: 100%"/>
+			</div>
+			<div style="float: left; width: 50%" class="img" >
+				<img src="images/funscr3_calc.png" alt="Part5_src2" style="margin-left: 5%; margin-top: -3%;width: 50%"/>
+
+				<div style="border-radius:10px; box-shadow: 0 0 10px #888888;margin-left: 5%; margin-top: 2%;width: 25%; position: absolute;z-index:2; background: #2a6496;line-height: 90px; text-align: center; font-family: 微软雅黑;font-size: 20px;overflow:hidden" id="part5box3">
+
+				</div>
+
+				<div style="border-radius:10px; box-shadow: 0 0 10px #888888;margin-left:22%; margin-top: -3%;width: 20%; height: 12%; position: absolute;z-index:3; background: #47a447;line-height: 90px; text-align: center; font-family: 微软雅黑;font-size: 20px;overflow:hidden">
+					<font id="part5box3text1" color="white" style="height: 40%;font-family: 微软雅黑"> 学号抽签： 31  </font>
+					<button style="border-radius:10px; height: 28px; border: 1px solid transparent;background-color: white;  border-color: #357ebd; color: black; font-family: 微软雅黑" onclick="randomnumber()">生成</button>
+				</div>
+
+			</div>
 
 		</div>
 
-		<div style="border-radius:10px; box-shadow: 0 0 10px #888888;margin-left:22%; margin-top: -3%;width: 15%; height: 12%; position: absolute;z-index:3; background: #47a447;line-height: 90px; text-align: center; font-family: 微软雅黑;font-size: 20px;overflow:hidden">
-			<font id="part5box3text1" color="white" style="height: 40%;font-family: 微软雅黑"> 随机生成学号：15  </font>
-			<button style="border-radius:10px; height: 28px; border: 1px solid transparent;background-color: white;  border-color: #357ebd; color: black; font-family: 微软雅黑" onclick="randomnumber()">生成</button>
+
+
+		<div class="DifFunction_section_Part6" id="Part6">
+			<div>
+				<h2>班级电脑轻松维护</h2>
+				<h3>提供更贴近教学电脑的专属维护功能，切合日常实际</h3>
+				<h4>垃圾清理 / 限制程序运行 / 晚间自动关机 / 教学专用精简播放器 / 常见问题疑难解决</h4>
+			</div>
+			<div class="img" data-move-x='-500px'>
+				<div style="float: left; width: 50%;">
+					<img src="images/funscr4_shut.png" alt="Part6_src1" style="margin-left: 27%; margin-top: -2%; width: 58%; max-width: 100%;"/>
+				</div>
+
+				<div style="float: left; width: 50%">
+					<img src="images/funscr4_forbid.png" alt="Part6_src2" style="margin-left: -6%; margin-top: -4%; width: 35%; max-width: 100%;"/>
+				</div>
+				<div style="float: left; width: 50%;">
+					<img src="images/funscr4_notopen.png" alt="Part6_src3" style="margin-left: 133%; margin-top: -26%; width: 35%; max-width: 100%;"/>
+				</div>
+			</div>
 		</div>
-
 	</div>
 
-</div>
 
-
-
-<div class="DifFunction_section_Part6" id="Part6">
-	<div>
-		<h2>班级电脑轻松维护</h2>
-		<h3>提供更贴近教学电脑的专属维护功能，切合日常实际</h3>
-		<h4>垃圾清理 / 限制程序运行 / 晚间自动关机 / 教学专用精简播放器 / 常见问题疑难解决</h4>
-	</div>
-<div class="img" data-move-x='-500px'>
-	<div style="float: left; width: 50%;">
-		<img src="images/funscr4_shut.png" alt="Part6_src1" style="margin-left: 27%; margin-top: -2%; width: 58%; max-width: 100%;"/>
+	<div class="DifFunction_section_Part7" id="contact_part">
+		<h4>EClass Assistant | 当前最新版本：5.0 (Build 2018.10)</h4>
+		<h3>软件作者邮箱：baitohhy@163.com | QQ：1962343796</h3>
+		<h3>本介绍页页面设计&编写: 胡鸿猷 耿辰 杨哲轩</h3>
+		<h4>Copyright 2014-2018 | EClass Assistant 软件由胡鸿猷开发，著作权受国家保护（软著登字1607011号），保留所有权利。</h4>
 	</div>
 
-	<div style="float: left; width: 50%">
-		<img src="images/funscr4_forbid.png" alt="Part6_src2" style="margin-left: -6%; margin-top: -4%; width: 35%; max-width: 100%;"/>
-	</div>
-	<div style="float: left; width: 50%;">
-		<img src="images/funscr4_notopen.png" alt="Part6_src3" style="margin-left: 133%; margin-top: -26%; width: 35%; max-width: 100%;"/>
-	</div>
-</div>
-</div>
-</div>
 
 
-<div class="DifFunction_section_Part7" id="contact_part">
-
-	<h3>联系我们: 胡鸿猷 耿辰 杨哲轩</h3>
-	<h4>Copyright2014-2018 本网页介绍软件由胡鸿猷开发，著作权受国家保护（软著登字1607011号），保留所有权利。</h4>
-</div>
-
-
-
-<script>
-	jQuery("#layerslider").layerSlider({
-		responsive: false,
-		responsiveUnder: 1100,
-		layersContainer: 1100,
-		skin: 'fullwidth',
-		hoverPrevNext: false,
-		skinsPath: 'layerslider/skins/'
-	});
+	<script>
+		jQuery("#layerslider").layerSlider({
+			responsive: false,
+			responsiveUnder: 1100,
+			layersContainer: 1100,
+			skin: 'fullwidth',
+			hoverPrevNext: false,
+			skinsPath: 'layerslider/skins/'
+		});
 
 
-</script>
+	</script>
 
-<script src="js/wow.js"></script>
-<script>
-wow = new WOW(
-  {
-	animateClass: 'animated',
-	offset:       100
-  }
-);
-wow.init();
-document.getElementById('moar').onclick = function() {
-  var section = document.createElement('section');
-  section.className = 'section--purple wow fadeInDown';
-  this.parentNode.insertBefore(section, this);
-};
-</script>
+	<script src="js/wow.js"></script>
+	<script>
+		wow = new WOW(
+				{
+					animateClass: 'animated',
+					offset:       100
+				}
+		);
+		wow.init();
+		document.getElementById('moar').onclick = function() {
+			var section = document.createElement('section');
+			section.className = 'section--purple wow fadeInDown';
+			this.parentNode.insertBefore(section, this);
+		};
+	</script>
 
-<script type="text/javascript">
-$(function() {
-$('a[href*=#]:not([href=#])').click(function() {
-if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-var target = $(this.hash);
-target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-if (target.length) {
-$('html,body').animate({
-scrollTop: target.offset().top - 132
-}, 2000);
-return false;
-}
-}
-});
-});
-</script>
+	<script type="text/javascript">
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top - 132
+						}, 2000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
 
-    <script>
-        function randomnumber() {
-            var randPart = document.getElementById('part5box3text1');
-            var number = Math.floor(Math.random() * 50);
-            randPart.innerHTML= '<font color="white" style="height: 30px;font-family: 微软雅黑">随机生成学号：  '+number+'</font>'
-        }
-    </script>
-    <script>
-        var countdown =document.getElementById('part5box3');
-        var t=180;
-        function gettime() {
-            t--;
-            var min= Math.floor(t/60);
-            var sec= t%60;
-            var str= "<font color='white' style='height: 40%;font-family: 微软雅黑;'>距离时间结束还剩："+min+'分'+sec+'秒</font>';
-            countdown.innerHTML=str;
-            if (t==0) t=180;
-        }
-        gettime();
-        setInterval(gettime,1000);
-    </script>
-    <script>
-        $('div.img').smoove({
-            offset: '30%'
-        });
-    </script>
+	<script>
+		function randomnumber() {
+			var randPart = document.getElementById('part5box3text1');
+			var number = Math.floor(Math.random() * 50);
+			randPart.innerHTML= '<font color="white" style="height: 30px;font-family: 微软雅黑">学号抽签： '+number+'</font>'
+		}
+	</script>
+	<script>
+		var countdown =document.getElementById('part5box3');
+		var t=180;
+		function gettime() {
+			t--;
+			var min= Math.floor(t/60);
+			var sec= t%60;
+			var str= "<font color='white' style='height: 40%;font-family: 微软雅黑;'>距离时间结束还剩："+min+' 分 '+sec+' 秒</font>';
+			countdown.innerHTML=str;
+			if (t==0) t=180;
+		}
+		gettime();
+		setInterval(gettime,1000);
+	</script>
+	<script>
+		$('div.img').smoove({
+			offset: '30%'
+		});
+	</script>
 
-    <script type="text/javascript">
-
-
-$(document).ready(function() {
-
-if($(window).width() <= 1200){
+	<script type="text/javascript">
 
 
-$(function() {
-$('a[href*=#]:not([href=#])').click(function() {
-if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-var target = $(this.hash);
-target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-if (target.length) {
-$('html,body').animate({
-scrollTop: target.offset().top - 132
-}, 2000);
-return false;
-}
-}
-});
-});
+		$(document).ready(function() {
+
+			if($(window).width() <= 1200){
+
+
+				$(function() {
+					$('a[href*=#]:not([href=#])').click(function() {
+						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+							if (target.length) {
+								$('html,body').animate({
+									scrollTop: target.offset().top - 132
+								}, 2000);
+								return false;
+							}
+						}
+					});
+				});
 
 
 
-}
+			}
 
-});
+		});
 
 
-</script>
+	</script>
 
 
 
